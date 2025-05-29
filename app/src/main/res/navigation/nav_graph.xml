@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.home.HomeFragment"
+        android:label="Anasayfa"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.detail.DetailFragment"
+        android:label="Yemek Detay"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="yemek"
+            app:argType="com.example.yemeksiparisuygulamasi.model.Yemek" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.favorites.FavoritesFragment"
+        android:label="Favoriler"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.cart.CartFragment"
+        android:label="Sepet"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.account.AccountFragment"
+        android:label="Hesap"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_accountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.yemeksiparisuygulamasi.ui.account.LoginFragment"
+        android:label="Giriş Yap" />
+</navigation>
