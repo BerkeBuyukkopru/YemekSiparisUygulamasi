@@ -16,6 +16,8 @@ Bu uygulama, Android platformunda Kotlin ve MVVM mimarisi kullanılarak gelişti
 - **Retrofit :** API çağrıları için HTTP istemcisi
 - **Glide :** Resimlerin yüklenmesi ve gösterilmesi
 - **Navigation Component :** Fragmentlar arası geçiş yönetimi
+- **Hilt :** Bağımlılık enjeksiyon sistemi
+- **Coroutine :** Arka planda veri çekme işlemleri için
 - **RecyclerView & Adapter :** Dinamik listeleme
 - **ConstraintLayout :** Esnek ve modern UI tasarımı
 - **LiveData & ViewModel :** Veri gözlemleme ve UI güncelleme
