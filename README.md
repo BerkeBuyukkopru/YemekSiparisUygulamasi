@@ -1,29 +1,29 @@
-# Yemek Sipariş Uygulaması - Doya Doya
-Bu uygulama, Android platformunda Kotlin ve MVVM mimarisi kullanılarak geliştirilmiş, kullanıcıların yemekleri listeleyip detaylarını görebildiği, favorilere ekleyebildiği ve sipariş verebildiği modern bir mobil uygulamadır.
+# Food Ordering App - Doya Doya
+**Doya Doya** is a modern food ordering mobile application built for Android using Kotlin and the MVVM architectural pattern. It allows users to browse meals, view details, add to favorites, and manage their cart for ordering.
 
-## Özellikler
-- **Yemek listesi görüntüleme:** Kasım Adalan’ın açık API’sinden yemekleri çekerek listeleme.
-- **Detay sayfası:** Her yemek için detaylı bilgi ve görsel.
-- **Favorilere ekleme/çıkarma:** Yemekleri favoriler sayfasına ekleyip çıkarabilme.
-- **Sepet yönetimi:** Sepete eklenen ürünlerin listelenmesi ve onaylanması.
-- **Kullanıcı bilgileri:** Kullanıcı profili için bilgi girişi.
-- **Navigasyon:** Alt menü (Bottom Navigation) ile sayfalar arası kolay geçiş.
-- **Responsive tasarım:** ConstraintLayout ile farklı ekran boyutlarına uyum.
+## Features
+- **Meal Listing:** Fetches and displays meals using Kasım Adalan’s open API.
+- **Detail Page:** Shows detailed information and images for each meal.
+- **Favorites Management:** Add or remove meals from the favorites page.
+- **Cart Management:** View and confirm the items added to the cart.
+- **User Information:** Input and display of user profile information.
+- **Navigation:** Easy navigation between pages via Bottom Navigation.
+- **Responsive UI:** Designed with ConstraintLayout for compatibility across various screen sizes.
 
-## Teknolojiler ve Kütüphaneler
-- **Kotlin :** Ana programlama dili
-- **MVVM (Model-View-ViewModel) :** Mimari desen
-- **Retrofit :** API çağrıları için HTTP istemcisi
-- **Glide :** Resimlerin yüklenmesi ve gösterilmesi
-- **Navigation Component :** Fragmentlar arası geçiş yönetimi
-- **Hilt :** Bağımlılık enjeksiyon sistemi
-- **Coroutine :** Arka planda veri çekme işlemleri için
-- **RecyclerView & Adapter :** Dinamik listeleme
-- **ConstraintLayout :** Esnek ve modern UI tasarımı
-- **LiveData & ViewModel :** Veri gözlemleme ve UI güncelleme
-- **CardView :** Şık kart tasarımı için
+## Technologies & Libraries
+- **Kotlin:** Primary programming language.
+- **MVVM (Model-View-ViewModel):** Architectural pattern.
+- **Retrofit:** HTTP client for API calls.
+- **Glide:** Image loading and display.
+- **Navigation Component:** Manages fragment navigation.
+- **Hilt:** Dependency injection framework.
+- **Coroutines:** For asynchronous data operations.
+- **RecyclerView & Adapter:** For displaying dynamic lists.
+- **ConstraintLayout:** Flexible and modern UI design.
+- **LiveData & ViewModel:** For observing and updating UI data.
+- **CardView:** For elegant card-style UI elements.
 
-## Proje Yapısı
+## Project Structure
 - com.example.yemeksiparisuygulamasi
   - adapter
     - SepetAdapter
@@ -54,7 +54,7 @@ Bu uygulama, Android platformunda Kotlin ve MVVM mimarisi kullanılarak gelişti
   - menu (bottom_nav_menu)
   - navigation (nav_graph)
 
-## Ekran Görüntüleri
+## Screenshots
 ![Hesap 1](https://github.com/user-attachments/assets/cca4a315-d262-4afd-b8c3-6aa8b0911671)
 ![Hesap 2](https://github.com/user-attachments/assets/9f94d967-7e42-4924-b7ee-ed05ca580e10)
 ![Hesap 3](https://github.com/user-attachments/assets/e0ede4f9-ccc0-4e43-a2aa-902f85f2f43e)
